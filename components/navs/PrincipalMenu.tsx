@@ -1,6 +1,7 @@
 import React from 'react'
 import { Links } from './Links'
 import { principalLinks } from '@/data/common'
+import { MobileMenu } from './MobileMenu'
 
 export const PrincipalMenu = () => {
   return (
@@ -9,10 +10,9 @@ export const PrincipalMenu = () => {
         {/* <Logo /> */}
         <h1 className="text-2xl font-inter">TinoMaster</h1>
       </header>
-      <nav className="flex gap-4 lg:gap-10">
+      <nav className="flex gap-4 lg:gap-10 text-sm">
         <Links links={principalLinks} />
-{/*         <SelectLanguage />
-        <BtnMenuMovil /> */}
+        <MobileMenu links={principalLinks} />
       </nav>
     </header>
   )

@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
 import { PrincipalMenu } from "@/components/navs/PrincipalMenu";
 
-const inter = Inter({ subsets: ["latin"] });
+const siliguri = Hind_Siliguri({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Portfolio | TinoMaster",
@@ -17,9 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`font-siliguri ${siliguri.className} bg-darkMode`}>
         <PrincipalMenu />
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }
