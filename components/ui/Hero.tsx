@@ -4,6 +4,7 @@ import { BtnDownloadCurr } from "./BtnDownloadCurr";
 export const Hero = () => {
   return (
     <section className="w-full mt-[70px] relative">
+      {/* Presentación */}
       <div className="max-w-screen-xl mx-auto px-4 py-16 lg:py-28 gap-12 text-gray-600 md:px-8">
         <div className="flex justify-center items-center py-2">
           <div className="w-20 h-20 rounded-full overflow-hidden">
@@ -19,7 +20,7 @@ export const Hero = () => {
           <h2 className="text-sm font-medium">Full stack developer</h2>
           <h2 className="text-4xl text-gray-200 font-extrabold mx-auto md:text-5xl">
             Design your projects faster with{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-secondary">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
               the largest figma UI kit
             </span>
           </h2>
@@ -31,6 +32,7 @@ export const Hero = () => {
             <BtnDownloadCurr />
           </div>
         </div>
+        {/* Tecnologías */}
         <div className="mt-14"></div>
       </div>
     </section>
