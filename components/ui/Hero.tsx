@@ -1,35 +1,28 @@
-import Image from "next/image";
-import { BtnDownloadCurr } from "./BtnDownloadCurr";
+import { BtnContactMe } from "./buttons/BtnContactMe";
+import { BtnOurWorks } from "./buttons/BtnOurWorks";
 
 export const Hero = () => {
   return (
-    <section className="w-full mt-[70px] relative">
+    <section className="w-full mt-[70px] relative bg-gradient-to-t from-transparent via-secondary/5 to-transparent">
       {/* Presentación */}
-      <div className="max-w-screen-xl mx-auto px-4 py-16 lg:py-28 gap-12 text-gray-600 md:px-8">
+      <div className="max-w-screen-xl mx-auto px-4 py-12 lg:py-28 text-gray-600 md:px-8">
         <div className="flex justify-center items-center py-2">
-          <div className="w-20 h-20 rounded-full overflow-hidden">
-            <Image
-              src="/assets/images/my_image.png"
-              alt="hero"
-              width={1000}
-              height={1000}
-            />
-          </div>
+          <h2 className="text-sm font-medium">Hi there!</h2>
         </div>
-        <div className="space-y-5 max-w-4xl mx-auto text-center">
-          <h2 className="text-sm font-medium">Full stack developer</h2>
+        <div className="space-y-10 max-w-4xl mx-auto text-center">
           <h2 className="text-4xl text-gray-200 font-extrabold mx-auto md:text-5xl">
-            Design your projects faster with{" "}
+            Innovative and personalized solutions{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              the largest figma UI kit
+              to transform your digital presence
             </span>
           </h2>
           <p className="max-w-2xl mx-auto">
-            Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
-            doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+            Through innovative strategies and a personalized approach, we take
+            your digital presence to the next level, exceeding all expectations.
           </p>
           <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-            <BtnDownloadCurr />
+            <BtnContactMe />
+            <BtnOurWorks />
           </div>
         </div>
         {/* Tecnologías */}

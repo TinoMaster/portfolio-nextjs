@@ -10,8 +10,8 @@ const siliguri = Hind_Siliguri({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | TinoMaster",
-  description: "Portfolio of TinoMaster",
+  title: "VirtualDream | Home",
+  description: "transform your digital presence, we do it for you",
 };
 
 export default function RootLayout({

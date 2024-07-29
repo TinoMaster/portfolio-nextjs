@@ -28,10 +28,10 @@ export const Links = ({ links, mobile = false }: LinksProps) => {
     >
       {links?.map((link) => (
         <Link
-          className={`flex items-baseline justify-center transition-colors px-2 py-1 rounded-md relative capitalize font-inter ${
+          className={`flex items-baseline justify-center font-medium transition-colors px-2 py-1 rounded-md relative capitalize font-inter ${
             route[0] === link.path
               ? "bg-white text-slate-800"
-              : "hover:text-slate-400"
+              : "hover:text-slate-400 text-slate-300"
           }`}
           key={link.name}
           href={link.path}
