@@ -36,7 +36,7 @@ export const Hero = () => {
           </div>
         </div>
         {/* Tecnologías */}
-        <div className="mt-14 flex justify-center items-center h-[100px] lg:h-[200px] bg-gradient-to-r from-transparent via-secondary/5 to-transparent">
+        <div className="mt-14 flex justify-center items-center h-[100px] lg:h-[200px] bg-gradient-to-r from-transparent via-slate-800/20 to-transparent">
           <InfiniteScroll items={items} />
         </div>
       </div>
