@@ -2,16 +2,17 @@ import { BtnContactMe } from "./buttons/BtnContactMe";
 import { BtnOurWorks } from "./buttons/BtnOurWorks";
 import { InfiniteScroll } from "./InfiniteScroll";
 
+const items = [
+  "Design",
+  "Development",
+  "Branding",
+  "Strategy",
+  "Content",
+  "UX",
+  "UI",
+];
+
 export const Hero = () => {
-  const items = [
-    "Design",
-    "Development",
-    "Branding",
-    "Strategy",
-    "Content",
-    "UX",
-    "UI",
-  ];
   return (
     <section className="w-full mt-[70px] relative bg-gradient-to-t from-transparent via-secondary/5 to-transparent">
       {/* Presentación */}
@@ -36,7 +37,7 @@ export const Hero = () => {
           </div>
         </div>
         {/* Tecnologías */}
-        <div className="mt-14 flex justify-center items-center h-[100px] lg:h-[200px] bg-gradient-to-r from-transparent via-slate-800/20 to-transparent">
+        <div className="mt-14 flex justify-center items-center h-[100px] lg:h-[200px] bg-gradient-to-r from-transparent via-slate-800/10 to-transparent">
           <InfiniteScroll items={items} />
         </div>
       </div>
